@@ -4,6 +4,17 @@
 
 ---
 
+## [2026-05-03] — Hero Mobile Responsiveness Fix
+
+### Fixed
+- **Hero image mobile viewport**
+  - File: `src/components/Hero.tsx`
+  - Nguyên nhân: trên mobile, ảnh bìa bị crop vào giữa, chữ "ServiceNow" bị cắt mất.
+  - Giải pháp: thêm `object-[center_20%] md:object-center` để mobile hiển thị phần trên ảnh nhiều hơn.
+  - Tăng overlay darkness: `from-black/40 via-black/40 to-black/80` giúp text đọc rõ hơn.
+
+---
+
 ## [2026-05-03] — GitHub Pages Deployment Setup
 
 ### Added
