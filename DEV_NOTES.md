@@ -4,6 +4,22 @@
 
 ---
 
+## [2026-05-03] — GitHub Pages Deployment Setup
+
+### Added
+- **GitHub Actions Workflow**
+  - File: `.github/workflows/deploy.yml`
+  - Auto deploy lên GitHub Pages mỗi khi push vào `main`.
+  - Build bằng Node 20, cache npm.
+- **Vite base path**
+  - File: `vite.config.ts`
+  - Thêm `base: '/MyPortfolio/'` để asset paths hoạt động đúng trên GitHub Pages.
+
+### Link public sau deploy
+- `https://kedy12a1.github.io/MyPortfolio`
+
+---
+
 ## [2025-05-03] — Projects & Story Content Update
 
 ### Added
