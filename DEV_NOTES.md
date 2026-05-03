@@ -4,6 +4,39 @@
 
 ---
 
+## [2025-05-03] — Projects & Story Content Update
+
+### Added
+- **Projects Section — Real Work Experience**
+  - File: `src/components/Projects.tsx`
+  - Tổng hợp 4 dự án thực tế từ work experience:
+    1. DXCi (06/2023 — Present) — CMDB, REST API, Meraki/Dynatrace/Intune, Quality Cloud
+    2. Fast Retailing (07/2021 — 05/2023) — Catalog, Scripting, Workflow, Now Mobile, Dynamic Translation
+    3. GrainCorp (05/2021 — 07/2021) — Flow Designer, Portal, Notifications
+    4. Woodside (01/2021 — 04/2021) — Flow Designer, Catalog, Widgets
+  - Thêm accent tag màu `amber` cho role labels.
+  - Tách `ProjectRow` thành component riêng với `React.memo` để optimize re-render.
+- **About Section — 3 Career Chapters**
+  - File: `src/components/About.tsx`
+  - Cập nhật 3 câu chuyện:
+    1. Ton Duc Thang University — The Foundation
+    2. DXC Technology Vietnam — The Beginning of My ServiceNow Career
+    3. FWD Vietnam Technology Company — Five Years of Growth
+  - Thêm brand color placeholder box cho mỗi chapter (xanh TDTU, đen DXC, cam FWD).
+  - Chuẩn bị sẵn cấu trúc import ảnh (`tdtu-logo.png`, `dxc-logo.png`, `fwd-logo.png`) để ghép sau.
+
+### Changed
+- **index.html**
+  - Đổi title: `My Google AI Studio App` → `Portfolio — ServiceNow Developer`.
+  - Chuyển Google Fonts import từ `src/index.css` sang `<link>` trong `index.html` với `preconnect`.
+- **src/index.css**
+  - Xóa `@import url(...)` Google Fonts để tránh cảnh báo PostCSS "@import must precede all other statements".
+
+### Dev Notes
+- **Images pending**: Chưa thêm ảnh logo TDTU / DXC / FWD do hạn chế network. Khi có ảnh, uncomment các dòng import trong `About.tsx` và gán `imageSrc` cho từng chapter.
+
+---
+
 ## [2025-05-03] — Hero Section Redesign
 
 ### Added
