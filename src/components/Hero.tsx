@@ -10,9 +10,9 @@ export default function Hero() {
         <img 
           src={heroImage} 
           alt="Business meets Technology" 
-          className="h-full w-full object-cover"
+          className="h-full w-full object-cover object-[center_20%] md:object-center"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-black/30 to-black/70" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/40 to-black/80" />
       </div>
 
       {/* Center Location Badge */}
